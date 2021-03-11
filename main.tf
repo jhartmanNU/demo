@@ -8,7 +8,7 @@ provider "vsphere" {
   allow_unverified_ssl = true
 }
 
-# Deploy 1 linux VMs
+
 module "terraform-vsphere-vm" {
   source  = "git@github.com:NUIT-PS-Infrastructure/terraform-vsphere-vm.git"
   vmtemp        = "rhel7template"
